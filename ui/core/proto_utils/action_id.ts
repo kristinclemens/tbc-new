@@ -445,6 +445,11 @@ export class ActionId {
 					name += ' (Wasted)';
 				}
 				break;
+			case 'Windfury Totem Effect':
+				if (tag == 1) {
+					name += ' (Party Weapon Buff)'
+				}
+				break;
 			case 'Moonfire':
 			case 'Sunfire':
 				if (tag == 1) {
