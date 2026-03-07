@@ -10,6 +10,7 @@ import { SavedTalents } from '../../core/proto/ui.js';
 import { Stats } from '../../core/proto_utils/stats';
 import { defaultRaidBuffMajorDamageCooldowns } from '../../core/proto_utils/utils';
 import DefaultApl from './apls/default.apl.json';
+import XoyaTwistTestingApl from './apls/xoya_twist_testing.apl.json';
 import P1Gear from './gear_sets/p1.gear.json';
 import P2Gear from './gear_sets/p2.gear.json';
 import P3Gear from './gear_sets/p3.gear.json';
@@ -30,6 +31,7 @@ export const P4_PRESET = PresetUtils.makePresetGear('P4 Preset', P4Gear);
 export const P5_PRESET = PresetUtils.makePresetGear('P5 Preset', P5Gear);
 
 export const ROTATION_PRESET_DEFAULT = PresetUtils.makePresetAPLRotation('Default', DefaultApl);
+export const ROTATION_PRESET_XOYA_TWIST_TESTING = PresetUtils.makePresetAPLRotation('Xoya Twist Testing', XoyaTwistTestingApl);
 
 // Preset options for EP weights
 export const P1_EP_PRESET = PresetUtils.makePresetEpWeights(
