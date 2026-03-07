@@ -209,7 +209,8 @@ func (action *APLActionStrictSequence) GetNextAction(sim *Simulation) *APLAction
 			}
 
 			sim.AddPendingAction(pa)
-			action.unit.SetRotationTimer(sim, pa.NextActionAt+time.Duration(1))
+			// Temporarily update to 2 nanoseconds from 1 to get twisting to work
+			action.unit.SetRotationTimer(sim, pa.NextActionAt+time.Duration(2))
 		}
 
 		return nextAction
